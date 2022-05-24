@@ -1,0 +1,45 @@
+<div class="row header">
+    <div class="col-12">
+        <button class="btn btn-primary login-button backtoheader" routerLink="/header">Back to Header</button>
+    </div>
+</div>
+<div class="row">
+    <div class="col-2 sidenav">
+      <button class="btn btn-secondary component1" routerLink ='templet1'>Component 1</button>
+      <button class="btn btn-secondary component2" routerLink ='templet2'>Component 2</button>
+      <button class="btn btn-secondary component1" routerLink ='templet1'>Component 1</button>
+      <button class="btn btn-secondary component2" routerLink ='templet2'>Component 2</button>
+      <button class="btn btn-secondary component1" routerLink ='templet1'>Component 1</button>
+      <button class="btn btn-secondary component2" routerLink ='templet2'>Component 2</button>
+      <button class="btn btn-secondary component1" routerLink ='templet1'>Component 1</button>
+      <button class="btn btn-secondary component2" routerLink ='templet2'>Component 2</button>
+      <button class="btn btn-secondary component1" routerLink ='templet1'>Component 1</button>
+
+
+    </div>
+    <div class="col-8 mainpage">
+        <h5>Custome Directive</h5>
+        <h5 appShared>Welcome To LeftNav Pannel Page</h5>
+        <table *ngFor="let item of receivedmsg;let i =index">
+            <tr>
+                <th>Sl.No</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email ID</th>
+                <th>Password</th>
+                <th>Phone Number</th>
+            </tr>
+            <tr>
+                <td>{{i+1}}</td>
+                <td>{{item.firstname}}</td>
+                <td>{{item.lastname}}</td>
+                <td>{{item.email}}</td>
+                <td>{{item.password}}</td>
+                <td>{{item.phonenumber}}</td>
+            </tr>
+        </table>
+    </div>
+    <div class="col-2 rightnav">
+
+    </div>
+</div>
